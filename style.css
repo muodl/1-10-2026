@@ -1,0 +1,97 @@
+/* Estilo geral do fundo da página */
+body {
+  background-color: #111;
+  color: #00ff22;
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Caixa principal da calculadora */
+.container {
+  border: 2px solid #00ff22;
+  border-radius: 12px;
+  padding: 24px;
+  width: 320px;
+  box-shadow: 0 0 15px rgba(0, 255, 34, 0.3);
+  background-color: #161616;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 15px 0;
+  font-size: 28px;
+  text-shadow: 0 0 8px #00ff22;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #00ff22;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: bold;
+  display: block;
+  margin-top: 12px;
+  letter-spacing: 1px;
+}
+
+/* Estilo das caixas de entrada de texto */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  background-color: #000;
+  border: 1px solid #00ff22;
+  border-radius: 6px;
+  color: #fff;
+  box-sizing: border-box;
+  outline: none;
+}
+
+input:focus {
+  border-color: #00ff22;
+  box-shadow: 0 0 5px rgba(0, 255, 34, 0.5);
+}
+
+/* Layout e estilo dos botões */
+.botoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  background-color: #1e7e28;
+  border: 1px solid #00ff22;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #00ff22;
+  color: #000;
+}
+
+/* Caixa do resultado */
+.resultado {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px dashed #00ff22;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 16px;
+  min-height: 20px;
+}

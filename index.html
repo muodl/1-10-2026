@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Básica</title>
+  <!-- Liga o ficheiro HTML ao ficheiro de estilo CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Calculadora</h1>
+    <hr>
+
+    <!-- Campos para digitação dos números -->
+    <label for="num1">Primeiro numero:</label>
+    <input type="text" id="num1" placeholder="Ingresa el primer número">
+
+    <label for="num2">Segundo numero:</label>
+    <input type="text" id="num2" placeholder="Ingresa el segundo número">
+
+    <!-- Botões que chamam a função do JavaScript ao serem clicados -->
+    <div class="botoes">
+      <button onclick="executarCalculo('+')">+</button>
+      <button onclick="executarCalculo('-')">-</button>
+      <button onclick="executarCalculo('*')">×</button>
+      <button onclick="executarCalculo('/')">÷</button>
+    </div>
+
+    <!-- Área onde o resultado será exibido -->
+    <div class="resultado" id="resultado">Resultado: -</div>
+  </div>
+
+  <!-- Liga o ficheiro HTML ao ficheiro de código JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
